@@ -31,7 +31,7 @@ with DAG(
     default_args={
         "owner": "user",
         "depends_on_past": False,
-        "email": ["otzslayer@gmail.com"],
+        "email": ["mjko0916@lgcns.com"],
         "on_failure_callback": failure_callback,
         "on_success_callback": success_callback,
     },
@@ -74,5 +74,4 @@ with DAG(
         append_env=True,
         retries=1,
     )
-
     data_extract >> data_preprocessing >> training
